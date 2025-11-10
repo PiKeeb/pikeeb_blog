@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 
 def add_note():
     root_folder = os.path.dirname(os.path.realpath(__file__))
-    notes_folder = os.path.join(root_folder, 'notes')
+    notes_folder = os.path.join(root_folder, 'blog')
     if not os.path.exists(notes_folder):
         os.makedirs(notes_folder, exist_ok=True)
         print('Notes folder created successfully!')
